@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Rck Paper Sceisor</title>
+</head>
+<body style="background-color: rgb(0, 0, 0); user-select: none;">
+
+    <div class="container-fluid bg-dark p-3 shadow-lg" id="banner">
+        <p class="display-2 text-center text-light">Rock-Paper-Scissor-Game</p>
+    </div>
+    
+    <!-- slogan -->
+    <div class="text-lead text-muted text-center m-5 display-5">
+        <p>We belive in you you can defeat AI's power!</p>
+     </div>
+
+     <!-- score controller -->
+        <div class="row  m-2 text-center" id="socre-panal">
+            <div class="col-md-3 col-sm-3 col-lg-3 m-2">
+                 <div class="card border shadow-lg">
+                         <div class="card-header bg-light text-danger">
+                              <h3>Player 1</h3>
+                          </div>
+                          <div class="card-body">
+                            <div id="ai-img">
+                                <img src="./photos/human.png" alt="ai logo" class="img-fluid" style="width: 190px; height: 150px;">
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <span class="text-primary h3">Score: </span><strong class="text-primary h3" id="human_score_adder"></strong>
+                        </div>
+                 </div>
+            </div>
+            <div class="col">
+                <div class="p-3 text-danger" id="tile">
+                    <p class="text-center display-4">Choose your weapon</p>
+                    <p class="text-center display-5">First score 5 points to win the game</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-lg-3 m-2">
+                <div class="card border shadow-lg">
+                         <div class="card-header bg-light text-danger">
+                              <h3>Computer</h3>
+                          </div>
+                          <div class="card-body">
+                            <div id="ai-img">
+                                <img src="./photos/AI.png" alt="ai logo" class="img-fluid" style="width: 190px; height: 150px;">
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <span class="text-primary h3">Score: </span><strong class="text-primary h3" id="computer_score_adder"></strong>
+                          </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- main section-->
+        <div class="row m-5 bg-warning p-3 rounded">
+            <div class="col-md-3">
+                <h2>Humans :</h2> 
+            </div>
+            <div class="col-md-6">
+                   <h3 id="human_choose"></h3>
+            </div>
+        </div>
+
+        <h3 id="equal_chance" class="m-5 text-light"></h3>
+
+        <div class="row m-5 bg-primary p-3 rounded"">
+            <div class="col-md-3">
+                <h2>Computer :</h2> 
+            </div>
+            <div class="col-md-6">
+                   <h3 id="computer_choose"></h3>
+            </div>
+        </div>
+
+        <div class="row m-5 rounded" id="human-kits">
+            <div class="col-md-3 col-sm-3 col-lg-3 m-3" id="rock">
+                <div class="card border shadow-lg" id="card-hover">
+                   <img src="./photos/new rock.jpg" alt="rock" id="rock">
+                </div>
+                <p class="text-center text-lead text-muted display-6 m-4">Rock</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-lg-3 m-3" id="paper">
+                <div class="card border shadow-lg" id="card-hover">
+                   <img src="./photos/new paper.jpg" alt="paper" id="paper">
+                </div>
+                <p class="text-center text-lead text-muted display-6 m-4">Paper</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-lg-3 m-3" id="scissor">
+                <div class="card border shadow-lg" id="card-hover">
+                   <img src="./photos/new scissor.webp" alt="scissor" id="scissor">
+                </div>
+                <p class="text-center text-lead text-muted display-6 m-4">Scissor</p>
+            </div>
+        </div>
+        <div class="none m-5">
+                       .
+        </div>
+
+        <div class="container-fluid bg-dark text-center text-light p-3 fixed-bottom">
+            <div class="footer">
+                <h5>| &copy; Copyright 2023 All Rights Reserved | Developed By Mulugeta Nigus |</h5>
+            </div>
+        </div>
+
+<script src="app.js"></script>    
+<script src="js/bootstrap.bundle.js"></script>    
+</body>
+</html>
